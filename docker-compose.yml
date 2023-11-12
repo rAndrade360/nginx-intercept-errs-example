@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  app:
+    build: .
+    ports:
+      - 8000:8000
+  proxy:
+    build: ./nginx/.
+    ports:
+      - 80:80
